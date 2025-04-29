@@ -1,0 +1,21 @@
+.chess-board {
+    width: 100%;
+    border-collapse: collapse;
+    height: auto; /* Asegura que el tablero adapte su tamaño */
+}
+
+.chess-board td {
+    width: 12.5%; /* 100%/8, para 8 columnas */
+    height: 100px; /* Asegura que cada celda tenga un tamaño significativo */
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2em; /* Tamaño de las piezas */
+}
+
+.white {
+    background-color: #f0d9b5;
+}
+
+.black {
+    background-color: #b58863;
+}
