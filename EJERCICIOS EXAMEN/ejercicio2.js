@@ -8,7 +8,7 @@ document.getElementById('addButton').addEventListener('click', function () {
         const gallery = document.getElementById('gallery');
         gallery.appendChild(img);
         
-        document.getElementById('imageUrl').value = ''; // Limpiar el campo de entrada
+        document.getElementById('imageUrl').value = ''; 
     } else {
         alert('Por favor, ingrese una URL de imagen válida.');
     }

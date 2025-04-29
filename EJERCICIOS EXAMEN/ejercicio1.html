@@ -1,108 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.m
-in.css" rel="stylesheet"
-integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKU
-c4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="./ejercicio1.css">
-</head>
-<body>
-    <div class="container text-center">
-        <h1 class="my-4">Minijedrez</h1>
-        
-        <div class="row">
-            <div class="col-md-6">
-                <input type="text" class="form-control mb-2" placeholder="Jugada Jugador 1">
-                <input type="text" class="form-control mb-2" placeholder="Jugada Jugador 2">
-                <button class="btn btn-primary">Jugar</button>
-            </div>
 
-            <div class="col-md-6">
-                <table class="chess-board">
-                    <tr>
-                        <td class="white"><i class="fas fa-chess-rook"></i></td>
-                        <td class="black"><i class="fas fa-chess-knight"></i></td>
-                        <td class="white"><i class="fas fa-chess-bishop"></i></td>
-                        <td class="black"><i class="fas fa-chess-queen"></i></td>
-                        <td class="white"><i class="fas fa-chess-king"></i></td>
-                        <td class="black"><i class="fas fa-chess-bishop"></i></td>
-                        <td class="white"><i class="fas fa-chess-knight"></i></td>
-                        <td class="black"><i class="fas fa-chess-rook"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="black"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="white"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="black"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="white"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="black"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="white"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="black"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="white"><i class="fas fa-chess-pawn"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="white"></td>
-                        <td class="black"></td>
-                        <td class="white"></td>
-                        <td class="black"></td>
-                        <td class="white"></td>
-                        <td class="black"></td>
-                        <td class="white"></td>
-                        <td class="black"></td>
-                    </tr>
-                    <tr>
-                        <td class="black"></td>
-                        <td class="white"></td>
-                        <td class="black"></td>
-                        <td class="white"></td>
-                        <td class="black"></td>
-                        <td class="white"></td>
-                        <td class="black"></td>
-                        <td class="white"></td>
-                    </tr>
-                    <tr>
-                        <td class="white"></td>
-                        <td class="black"></td>
-                        <td class="white"></td>
-                        <td class="black"></td>
-                        <td class="white"></td>
-                        <td class="black"></td>
-                        <td class="white"></td>
-                        <td class="black"></td>
-                    </tr>
-                    <tr>
-                        <td class="black"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="white"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="black"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="white"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="black"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="white"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="black"><i class="fas fa-chess-pawn"></i></td>
-                        <td class="white"><i class="fas fa-chess-pawn"></i></td>
-                    </tr>
-                    <tr>
-                        <td class="white"><i class="fas fa-chess-rook"></i></td>
-                        <td class="black"><i class="fas fa-chess-knight"></i></td>
-                        <td class="white"><i class="fas fa-chess-bishop"></i></td>
-                        <td class="black"><i class="fas fa-chess-queen"></i></td>
-                        <td class="white"><i class="fas fa-chess-king"></i></td>
-                        <td class="black"><i class="fas fa-chess-bishop"></i></td>
-                        <td class="white"><i class="fas fa-chess-knight"></i></td>
-                        <td class="black"><i class="fas fa-chess-rook"></i></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        
-        <footer class="mt-4 p-3 bg-danger text-white">
-            Programación Web
-        </footer>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./ejercicio1.css">
+
+</head>
+
+<body class="container">
+
+  <h1>Miniajedrez</h1>
+
+  <div class="row mb-3">
+
+    <div class="col container">
+
+      <div class="row-auto mb-3">
+
+        <label for="">Jugada jugador 1:</label>
+
+      </div>
+
+      <div class="row-auto mb-3">
+
+        <input type="text" class="form-control">
+
+      </div>
+
+      <div class="row-auto mb-3"> 
+
+        <label for="">Juagda jugador 2:</label>
+
+      </div>
+
+      <div class="row-auto mb-3">
+
+        <input type="text" class="form-control">
+
+      </div>
+
+      <div class="row-auto mb-3">
+
+        <button type="button" class="btn btn-outline-dark">Jugar</button>
+
+      </div>
+
     </div>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <div class="col container">
+
+      <div class="row">
+
+        <div class="col fondoamarillo img">
+
+          <label for=""></label>
+
+        </div>
+
+        <div class="col fondoverde">
+
+          
+
+        </div>
+
+        <div class="col fondoamarillo">
+
+           
+
+        </div>
+
+        <div class="col fondoverde">
+
+         
+
+        </div>
+
+        <div class="col fondoamarillo">
+
+         
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col fondoverde img">
+
+          <label for=""></label>
+
+        </div>
+
+        <div class="col fondoamarillo">
+
+         
+
+        </div>
+
+        <div class="col fondoverde">
+
+           
+
+        </div>
+
+        <div class="col fondoamarillo">
+
+         
+
+        </div>
+
+        <div class="col fondoverde">
+
+         
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col fondoamarillo img">
+
+          <label for=""></label>
+
+        </div>
+
+        <div class="col fondoverde">
+
+         
+
+        </div>
+
+        <div class="col fondoamarillo">
+
+          <img class="img" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FPe%25C3%25B3n_%2528ajedrez%2529&psig=AOvVaw0401uQyC0R1nA9btdm8Gkc&ust=1745981331211000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOD23rmd_IwDFQAAAAAdAAAAABAE">
+
+        </div>
+
+        <div class="col fondoverde">
+
+         
+
+        </div>
+
+        <div class="col fondoamarillo">
+
+         
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col fondoverde img">
+
+          <label for=""></label>
+
+        </div>
+
+        <div class="col fondoamarillo">
+
+         
+
+        </div>
+
+        <div class="col fondoverde">
+
+          <img class="img" src="https://c1.klipartz.com/pngpicture/241/954/sticker-png-queen-chess-pawn-chess-piece-white-and-black-in-chess-draw-bishop-game-thumbnail.png">
+
+        </div>
+
+        <div class="col fondoamarillo">
+
+         
+
+        </div>
+
+        <div class="col fondoverde">
+
+         
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col fondoamarillo img">
+
+          <label for=""></label>
+
+        </div>
+
+        <div class="col fondoverde">
+
+         
+
+        </div>
+
+        <div class="col fondoamarillo">
+
+           
+
+        </div>
+
+        <div class="col fondoverde">
+
+          
+
+        </div>
+
+        <div class="col fondoamarillo">
+
+         
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="d-grid gap-2 md-3">
+
+    <button type="button" class="btn btn-warning boton">Programacion Web</button>
+
+  </div>
+
 </body>
+
 </html>
